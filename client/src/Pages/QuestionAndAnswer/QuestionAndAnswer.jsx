@@ -9,11 +9,11 @@ import { MdOutlineQuestionAnswer } from "react-icons/md";
 import { UserState } from "../../App";
 function QuestionAndAnswer() {
   const [questionDetails, setQuestionDetails] = useState({});
-  const {user} = useContext(UserState);
-  const userId = user?.userid;
+  const {user} = useContext(UserState);// Get the user data from the context
+  const userId = user?.userid;// Get the user ID
   const { questionId } = useParams(); // Retrieves the `id` from the URL
   const [loading, setLoading] = useState(true);
-  const answerInput =useRef();
+  const answerInput =useRef();// Create a reference to the answer input
   // Retrieves the value of 'id' from the query string
   useEffect(() => {
     axiosInstance.get(`/question/${questionId}`).then((res) => {

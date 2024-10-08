@@ -10,6 +10,7 @@ function Signup({ onSwitch }) {
   const [error, setError] = useState(null); // for error message
   const [success, setSuccess] = useState(null); // for success message
   const [showPassword, setShowPassword] = useState(false); // State for showing/hiding password
+  
   const [formData, setFormData] = useState({
     username: "",
     firstName: "",
