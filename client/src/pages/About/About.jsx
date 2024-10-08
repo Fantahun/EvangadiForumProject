@@ -1,6 +1,7 @@
 import React from "react";
 
 import styles from "./about.module.css";
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
@@ -17,7 +18,8 @@ const About = () => {
         Whether you are willing to share your knowledge or you are just looking
         to meet mentors of your own, please start by joining the network here.
       </p>
-      <button className={styles.how_it_works_btn}>HOW IT WORKS</button>
+      <button className={styles.how_it_works_btn}>
+        <Link to="/howitworks" style={{color:"white"}}>HOW IT WORKS</Link></button>
       {/* <div className={styles.design_shape}></div> */}
     </div>
     </section>

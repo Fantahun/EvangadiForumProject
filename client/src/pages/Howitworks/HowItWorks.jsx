@@ -1,11 +1,17 @@
-import React from "react";
+import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import styles from "./HowItWorks.module.css";
 import Layout from "../../Layout/Layout";
+import { UserState } from "../../App";
+import Header from "../../components/Header/Header";
 
 const HowItWorks = () => {
+  const {user}=useContext(UserState);
+  const userId = user?.userid;
+
+
   return (
-   <Layout>
+  //  <Layout>
      <div className={styles.container}>
       <h2 className={styles.title}>Purpose of the Platform</h2>
       <p className={styles.description}>
@@ -49,20 +55,29 @@ const HowItWorks = () => {
       </div>
 
       <div className="parentContainer">
-        <div className={styles.buttonContainer}>
-          <Link to={"/signup"}>
+        
+    {
+      userId ? (
+       <>
+        <Link to={"/"}>Go to Home page</Link>
+       </>):(
+       
+      <div className={styles.buttonContainer}>
+          <Link to={"/auth"}>
             <button className={styles.signupButton}>Join us Sign Up Now</button>
           </Link>
           <span>
             Already have an account?
-            <Link to="/login" className={styles.login}>
+            <Link to="/auth" className={styles.login}>
               Login
             </Link>
           </span>
-        </div>
+        </div> 
+    )
+    }
       </div>
     </div>
-   </Layout>
+  //  </Layout>
   );
 };
 

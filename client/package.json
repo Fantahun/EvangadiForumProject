@@ -16,6 +16,7 @@
     "@mui/material": "^6.1.2",
     "axios": "^1.7.7",
     "bootstrap": "^5.3.3",
+    "bootstrap-sweetalert": "^1.0.1",
     "dotenv": "^16.4.5",
     "material-icons": "^1.13.12",
     "react": "^18.3.1",

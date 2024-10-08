@@ -65,7 +65,7 @@ async function register(req, res) {
 
 async function login(req, res) {
   const { email, password } = req.body;
-  console.log(email, password);
+  // console.log(email, password);
   // Check if email and password are provided
   if (!email || !password) {
     return res
@@ -99,7 +99,7 @@ async function login(req, res) {
     const username = user[0].username;
     const userid = user[0].userid;
     const secret = process.env.JWT_SECRET;
-    console.log(username, userid);
+    // console.log(username, userid);
     const token = jwt.sign({ username, userid }, secret, {
       expiresIn: "1d", // Token expires in 1 day
     });

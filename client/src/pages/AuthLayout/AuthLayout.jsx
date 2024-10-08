@@ -3,6 +3,7 @@ import styles from "./authLayout.module.css"; // Assuming this is your CSS modul
 import SignUp from "../SignUp/SignUp";
 import Login from "../Login/Login";
 import About from "../../pages/About/About";
+import Layout from "../../Layout/Layout";
 
 export default function AuthLayout() {
   const [isLogin, setisLogin] = useState(true); // Renamed the setter to match the state
@@ -18,7 +19,8 @@ export default function AuthLayout() {
   };
 
   return (
-    <div className={styles.container}>
+   <Layout>
+     <div className={styles.container}>
       <div className={styles.inner_container}>
         <div
           className={`${styles.formContainer} ${
@@ -36,5 +38,6 @@ export default function AuthLayout() {
         </div>
       </div>
     </div>
+   </Layout>
   );
 };

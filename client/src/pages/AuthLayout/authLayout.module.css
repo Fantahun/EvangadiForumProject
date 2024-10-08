@@ -6,7 +6,7 @@
     background-image: url('../../assets/Images/howitworkbg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    overflow: scroll;
+    overflow: hidden;
 } 
 
 .inner_container{
