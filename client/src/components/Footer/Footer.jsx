@@ -12,10 +12,7 @@ function Footer() {
       <div>
         <div className={classes.footer_logo}>
           <Link to="/">
-            <img
-              src={footerLogo}
-              alt=" evangagadi logo"
-            />
+            <img src={footerLogo} alt=" evangagadi logo" />
           </Link>
         </div>
         <div className={classes.footer_icons}>
@@ -30,50 +27,23 @@ function Footer() {
           </a>
         </div>
       </div>
-      <div className={classes.footer_links}>
-                 <h4 style={{ color: "white", fontWeight: "bold", fontSize: "20px" }}>
-                 Useful Links
-          </h4>
+      <div className={classes.footer_contacts}>
+        <h4>Useful Links</h4>
         <ul className={classes.footer_ul}>
-          <li className={classes.term}>
-            <Link
-              to="/howitworks"
-              style={{
-                textDecoration: "none",
-                color: "#959CA4",
-                paddingLeft: "0",
-              }}
-            >
-              How it works
-            </Link>
+          <li className={classes.linkBar}>
+            <Link to="/howitworks">How it works</Link>
           </li>
-          <li className={classes.term}>
-            <Link
-              to="/Terms/"
-              style={{
-                textDecoration: "none",
-                color: "#959CA4",
-                paddingLeft: "0",
-              }}
-            >
-              Terms of Serivce
-            </Link>
+          <li className={classes.linkBar}>
+            <Link to="/Terms/">Terms of Serivce</Link>
           </li>
-          <li className={classes.privacy}>
-            <Link
-              to="/PrivacyPolicy"
-              style={{ textDecoration: "none", color: "#959CA4" }}
-            >
-              Privacy policy
-            </Link>
+          <li className={classes.linkBar}>
+            <Link to="/PrivacyPolicy">Privacy policy</Link>
           </li>
         </ul>
       </div>
       <div className={classes.footer_contacts}>
-          <h4 style={{ color: "white", fontWeight: "bold", fontSize: "20px" }}>
-            Contact Info
-          </h4>
-          <ul className={classes.footer_ul}>
+        <h4>Contact Info</h4>
+        <ul className={classes.footer_ul}>
           <li>Evangadi Networks</li>
           <li>support@evangadi.com</li>
           <li>+1-202-386-2702</li>

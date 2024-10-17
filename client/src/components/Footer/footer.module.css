@@ -64,7 +64,7 @@
     transform: scale(1.09);
     color: white !important;
 }
-.term:hover{
+.linkBar:hover{
     transform: scale(1.09);
     color: white !important;
 }
@@ -72,6 +72,20 @@
     padding: 0 !important;
     margin-left: 0 !important;
 }
+.linkBar{
+    text-Decoration: "none";
+    color: #959CA4 !important    
+}
+
+.footer_ul Link{
+    text-Decoration: "none";
+    color: #959CA4 !important
+}
+.linkBar a {
+  color: inherit;
+  text-decoration: none;
+}
+
 
 /* Terms and privacy css */
 
@@ -100,6 +114,10 @@
 }
 .terms p{ 
     padding: 5px;
+}
+.footer_contacts h4{
+    font-size: 20px;
+    font-weight: bold;
 }
 
 @media screen and (max-width: 768px) {
